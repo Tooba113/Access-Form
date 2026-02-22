@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Access Form - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>Access Form</h2>
+        <ul>
+            <li class="active">My Forms</li>
+            <li onclick="goToBuilder()">Create New Form</li>
+            <li>Responses</li>
+            <li onclick="logout()">Logout</li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header>
+            <h1>Dashboard</h1>
+            <button class="create-btn" onclick="goToBuilder()">
+                + Create New Form
+            </button>
+        </header>
+
+        <section class="forms-section">
+            <div class="form-card">
+                <h3>Sample Feedback Form</h3>
+                <p>Created: 21 Feb 2026</p>
+                <button>View</button>
+            </div>
+
+            <div class="form-card">
+                <h3>Event Registration</h3>
+                <p>Created: 20 Feb 2026</p>
+                <button>View</button>
+            </div>
+        </section>
+    </main>
+
+</div>
+
+<script>
+function goToBuilder() {
+    window.location.href = "form-builder.html";
+}
+
+function logout() {
+    window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>

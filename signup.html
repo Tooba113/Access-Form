@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Access Form - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Create Account</h2>
+
+    <form id="signupForm">
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="signupEmail">Email:</label>
+            <input type="email" id="signupEmail" required>
+        </div>
+
+        <div class="form-group">
+            <label for="signupPassword">Password:</label>
+            <input type="password" id="signupPassword" required>
+        </div>
+
+        <button type="submit">Sign Up</button>
+
+        <p>Already have an account? 
+            <a href="login.html">Login</a>
+        </p>
+
+        <p id="signupMessage" class="error-message"></p>
+    </form>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
